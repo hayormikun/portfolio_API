@@ -21,6 +21,11 @@ mongoose
     console.log(err);
   });
 
+app.get('/', (req, res) => {
+    res.end("working")
+  }
+)  
+
 app.use("/api", require("./routes/api"));
 
 const PORT = process.env.PORT || 5000;
